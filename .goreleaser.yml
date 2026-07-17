@@ -1,7 +1,7 @@
 version: 2
 project_name: "sensu-check-uptime"
 builds:
-  - main: ./cmd/check-uptime/main.go
+  - main: ./cmd/check-uptime
     id: "check-uptime"
     env:
     - CGO_ENABLED=0
@@ -17,7 +17,7 @@ builds:
       - windows_386
       - windows_amd64
 
-  - main: ./cmd/metrics-uptime/main.go
+  - main: ./cmd/metrics-uptime
     id: "metrics-uptime"
     env:
     - CGO_ENABLED=0
